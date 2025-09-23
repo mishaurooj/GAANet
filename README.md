@@ -29,7 +29,7 @@ We propose **GAANet (Ghost Auto Anchor Network)**, a novel deep learning object 
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="gaanet.png" alt="GAANet Architecture" width="750">
+  <img src="./gaanet.png" alt="GAANet Architecture" width="750">
 </p>
 
 - **Input**: Infrared images (multi-class & multi-size targets)  
