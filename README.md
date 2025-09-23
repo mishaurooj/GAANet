@@ -89,6 +89,7 @@ Watch the presentation by **Engr. Misha Urooj Khan** explaining GAANet:
 ```bash
 git clone https://github.com/<your-username>/GAANet.git
 cd GAANet
+```
 
 ### 2️⃣ Install Dependencies
 
