@@ -82,3 +82,58 @@ We constructed a **custom IR dataset** using [Roboflow](https://app.roboflow.com
 ```bash
 git clone https://github.com/<your-username>/GAANet.git
 cd GAANet
+
+### 2️⃣ Install Dependencies
+
+pip install -r requirements.txt
+
+### 3️⃣ Dataset Preparation
+
+Download the dataset from Roboflow: https://app.roboflow.com/tfnet-night-vision/mul/1
+Export in YOLOv5 format.
+Place inside datasets/ folder as:
+datasets/
+  └── gaanet_ir/
+      ├── train/
+      ├── valid/
+      └── data.yaml
+
+### 4️⃣ Training
+python train.py --data datasets/gaanet_ir/data.yaml --cfg gaanet.yaml --weights '' --batch-size 256 --epochs 500
+
+### 5️⃣ Evaluation
+python val.py --data datasets/gaanet_ir/data.yaml --weights runs/train/gaanet/weights/best.pt
+
+### 6️⃣ Inference
+python detect.py --weights runs/train/gaanet/weights/best.pt --source test_images/
+
+## 🔍 Citation
+
+If you use GAANet in your research, please cite:
+
+@INPROCEEDINGS{10200720,
+  author={Khan, Misha Urooj and Misbah, Maham and Kaleem, Zeeshan and Deng, Yansha and Jamalipour, Abbas},
+  booktitle={2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)},
+  title={GAANet: Ghost Auto Anchor Network for Detecting Varying Size Drones in Dark},
+  year={2023},
+  pages={1-6},
+  doi={10.1109/VTC2023-Spring57618.2023.10200720}
+}
+
+## 🙏 Acknowledgment
+
+This research was supported by:
+Higher Education Commission (HEC) Pakistan – NRPU 2021 Grant 15687
+Engineering and Physical Sciences Research Council (EPSRC), UK – Grant EP/W004348/1
+
+## 📬 Contact
+
+For queries:
+📧 mishauroojkhan@gmail.com
+ | mahammisbah33@gmail.com
+ | zeeshankaleem@gmail.com
+
+## ⭐ If you found GAANet useful, please give this repo a star!
+
+
+
