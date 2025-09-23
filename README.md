@@ -76,6 +76,13 @@ We constructed a **custom IR dataset** using [Roboflow](https://app.roboflow.com
 
 ---
 
+## 🎥 Video Presentation
+Watch the presentation by **Engr. Misha Urooj Khan** explaining GAANet:  
+
+[![GAANet Video Presentation](https://img.youtube.com/vi/jstigCgL5sQ/0.jpg)](https://youtu.be/jstigCgL5sQ)
+
+---
+
 ## ⚙️ Installation & Usage
 
 ### 1️⃣ Clone Repository
